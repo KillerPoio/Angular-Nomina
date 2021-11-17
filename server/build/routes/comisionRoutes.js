@@ -8,7 +8,11 @@ class comisionRoutes {
         this.config();
     }
     config() {
-        this.router.get('/', comisionController_1.comisionController.index);
+        this.router.get('/', comisionController_1.comisionController.listado);
+        this.router.get('/:id', comisionController_1.comisionController.getOne);
+        this.router.post('/', comisionController_1.comisionController.create);
+        this.router.put('/:id', comisionController_1.comisionController.update);
+        this.router.delete('/:id', comisionController_1.comisionController.delete);
     }
 }
 const comisionRouts = new comisionRoutes();
