@@ -39,7 +39,7 @@ $npm start
 ```
 
 4. In the file database ('server/build/key.js') please add your configuration of MYSQL server
-5. Please migrate de database file in MYSQL
+5. Please migrate the database file in MYSQL
 ## Requeriments 
 - cors 2.8.5
 - mysql 2.18.1
