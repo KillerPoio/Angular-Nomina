@@ -25,7 +25,7 @@ class ComisionController {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
             const asesor = yield database_1.default.query('SELECT * FROM nivel_asesor WHERE id = ?', [id]);
-            if (asesor.lenght > 0) {
+            if (asesor.length > 0) {
                 return res.json(asesor[0]);
             }
             res.status(404).json({ text: 'el asesor no existe' });

@@ -8,7 +8,9 @@ This aplication can be used as an example of CRUD that implements Node, ANGULAR,
 $ git clone https://github.com/KillerPoio/Angular-Nomina.git
 ```
 
-3. Install the dependeces
+3. Install the dependeces and run server's
+
+Backend
 ```
 $ cd server 
 ```
@@ -16,16 +18,27 @@ $ cd server
 ```
 $npm install
 ```
+Run server
+
+```
+$npm run dev
+```
+Front end
 
 ```
 $cd FrontEnd
 ```
 
 ```
-$npm install
+ $npm install
+```
+Run Server
+
+```
+$npm start
 ```
 
-4. In the file database ('server/keys') please add your configuration of MYSQL server
+4. In the file database ('server/build/key.js') please add your configuration of MYSQL server
 5. Please migrate de database file in MYSQL
 ## Requeriments 
 - cors 2.8.5
