@@ -1,1 +1,26 @@
-<p>asesor-datos works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Nivel</th>
+        <th scope="col">Salario</th>
+        <th scope="col">Eliminar</th>
+        <th scope="col">Actualizar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Asesor of ases">
+        <th>{{Asesor.id}}</th>
+        <td>{{Asesor.Nombre}}</td>
+        <td>{{Asesor.Nivel_Asesor}}</td>
+        <td>{{Asesor.Salario_base}}</td>
+        <td>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-success">Editar</button>
+        </td>
+      </tr>
+    </tbody>
+</table>

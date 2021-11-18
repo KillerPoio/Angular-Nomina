@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsesorDatosComponent } from './components/asesor-datos/asesor-datos.component';
+import { AsesorFormComponent } from './components/asesor-form/asesor-form.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'asesor',
     component: AsesorDatosComponent
+  },
+  {
+    path: 'asesor/add',
+    component: AsesorFormComponent
   }
 ];
 

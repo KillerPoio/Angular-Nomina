@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><h1>asesores</h1></a>
+        <a class="navbar-brand" routerLink="/"><h1>asesores</h1></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav d-flex">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/asesor">Datos asesores</a>
-            <a class="nav-link" href="#">registrar asesor</a>
+            <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+            <a class="nav-link" routerLink="/asesor/add" routerLinkActive="active">registrar asesor</a>
+            <a class="nav-link" routerLink="/asesor" routerLinkActive="active">Datos asesores</a>
             </div>
         </div>
     </div>

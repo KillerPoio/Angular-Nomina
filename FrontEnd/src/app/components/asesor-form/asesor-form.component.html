@@ -1,1 +1,19 @@
-<p>asesor-form works!</p>
+<form>
+    <div class="mb-3">
+      <label for="Nombre" class="form-label">Nombre del asesor: </label>
+      <input type="text" class="form-control" id="Nombre" name="Nombre" [(ngModel)]="ases.nombre" aria-describedby="emailHelp" placeholder="Nombre" autofocus>
+    </div>
+    <div class="mb-3">
+      <label for="Nivel" class="form-label">Nivel asesor: </label>
+      <input type="text" class="form-control" id="Nivel" name="Nivel" [(ngModel)]="ases.Nivel_asesor" placeholder="nivel del asesor">
+    </div>
+    <div class="mb-3">
+      <label for="Salario" class="form-label">Salario: </label>
+      <input type="number" class="form-control" id="Salario" [(ngModel)]="ases.Salario_base" name="Salario" placeholder="Salario">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="saveAsesor()">Submit</button>
+</form>

@@ -12,22 +12,22 @@ export class AsesoresService {
   constructor(private http: HttpClient) { }
 
   getAsesores(){
-    return this.http.get('${this.URL_API}/asesor');
+    return this.http.get('http://localhost:3000/api/comisiones');
   }
 
   getAsesor(id: string){
-    return this.http.get('${this.URL_API}/asesor/${id}');
+    return this.http.get('http://localhost:3000/api/comisiones/${id}');
   }
 
   deleteAsesor(id: string){
-    return this.http.delete('${this.URL_API}/asesor/${id}');
+    return this.http.delete('http://localhost:3000/api/comisiones/${id}');
   }
 
   saveAsesor(asesor: Asesor){
-    return this.http.post('${this.URL_API}/asesor', asesor);
+    return this.http.post('http://localhost:3000/api/comisiones', asesor);
   }
 
   updateAsesor(id: string, updatedAseso: Asesor){
-    return this.http.put('${this.URL_API}/asesor/${id}', updatedAseso);
+    return this.http.put('http://localhost:3000/api/comisiones/${id}', updatedAseso);
   }
 }
