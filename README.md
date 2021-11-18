@@ -25,7 +25,7 @@ $cd FrontEnd
 $npm install
 ```
 
-4. In the file database ('server/database') please add your configuration of MYSQL server
+4. In the file database ('server/keys') please add your configuration of MYSQL server
 5. Please migrate de database file in MYSQL
 ## Requeriments 
 - cors 2.8.5
