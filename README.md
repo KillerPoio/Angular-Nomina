@@ -22,7 +22,7 @@ $cd FrontEnd
 ```
 
 ```
- $npm install
+$npm install
 ```
 
 4. In the file database ('server/database') please add your configuration of MYSQL server
