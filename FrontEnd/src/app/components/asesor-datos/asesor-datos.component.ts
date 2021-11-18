@@ -13,14 +13,27 @@ export class AsesorDatosComponent implements OnInit {
   constructor(private asesorService: AsesoresService) { }
 
   ngOnInit(): void {
+    this.getAsesores();
+  }
+  
+  getAsesores(){
     this.asesorService.getAsesores().subscribe(
       res => {
         this.ases = res;
       },
       err => console.error(err)
-
+  
     );
-    
   }
 
+  deletAsesor(id: string){
+    console.log(id);
+    this.asesorService.deleteAsesor(id).subscribe(
+      res => {
+        this.ases = res;
+        this.getAsesores();
+      },
+      err => console.error(err)
+    )
+  }
 }

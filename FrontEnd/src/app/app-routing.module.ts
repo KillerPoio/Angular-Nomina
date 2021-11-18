@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'asesor/add',
     component: AsesorFormComponent
+  },
+  {
+    path: 'asesor/edit/:id',
+    component: AsesorFormComponent
   }
 ];
 

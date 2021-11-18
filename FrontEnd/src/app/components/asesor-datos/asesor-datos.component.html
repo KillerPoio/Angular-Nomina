@@ -16,10 +16,10 @@
         <td>{{Asesor.Nivel_Asesor}}</td>
         <td>{{Asesor.Salario_base}}</td>
         <td>
-            <button type="button" class="btn btn-danger">Eliminar</button>
+            <button type="button" class="btn btn-danger" (click)="deletAsesor(Asesor.id)" >Eliminar</button>
         </td>
         <td>
-            <button type="button" class="btn btn-success">Editar</button>
+            <button type="button" [routerLink]="['/asesor/edit', Asesor.id ]" class="btn btn-success" >Editar</button>
         </td>
       </tr>
     </tbody>
