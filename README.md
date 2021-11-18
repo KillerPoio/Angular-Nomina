@@ -3,7 +3,7 @@
 This aplication can be used as an example of CRUD that implements Node, ANGULAR and the REST APi architecture
 ## Intallation
 1) CLone or Donwload
-  $ git clone https://github.com/KillerPoio/Angular-Nomina.git
+$ git clone https://github.com/KillerPoio/Angular-Nomina.git
 
 ## Requeriments 
 - cors 2.8.5
